@@ -2,7 +2,9 @@
 This project sends an ICMP echo message from device to another. Within the sent packet is covert message (base64 encoded text). The second device runs the listener to capture the packet then decode the message. The main priorities for this project were to further my knowledge with golang and understanding of ICMP packets.
 
 USE:
-- change
+- change "ENTER_TARGET_IP_HERE" to an IP in the ICMP_sender.go file
+- run ICMP_receiver.go to begin packet capture
+- run ICMP_sender.go
 
 SOURCES USED:
 - https://blog.logrocket.com/learn-golang-encryption-decryption/
