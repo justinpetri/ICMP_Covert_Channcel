@@ -18,7 +18,7 @@ import (
 	"golang.org/x/net/ipv4"
 )
 
-const targetIP = "192.168.0.188"
+const targetIP = "ENTER_TARGET_IP_HERE"
 
 func main() {
 	// Creates listener for return packets
