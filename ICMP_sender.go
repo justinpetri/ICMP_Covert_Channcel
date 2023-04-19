@@ -1,10 +1,3 @@
-// Works referenced:
-// https://blog.logrocket.com/learn-golang-encryption-decryption/
-// https://stackoverflow.com/questions/2937123/implementing-icmp-ping-in-go
-// https://stackoverflow.com/questions/55631569/go-mod-cannot-find-module-providing-package
-
-// first 8 bits of ICMP packet is reserved. 1 bit for type, 1 for code, 2 for checksum, 2 for identifier, 2 for sequence number
-
 package main
 
 import (
