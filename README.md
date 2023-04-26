@@ -13,3 +13,7 @@ SOURCES USED:
 
 NOTES:
 first 8 bits of received data from ICMP packet is reserved: 1 bit for type, 1 for code, 2 for checksum, 2 for identifier, 2 for sequence number
+
+- Change last bit of code or checksum. split up encoded message and send 1 bit per packet (see if i change different fields like sequence number or type)
+- storage channel modifying the data of the packet
+- timing channel, vary the timing (one comes at 1 second which is 0 in binary then next comes at 2 seconds which is 1 in binary) (doesnt modify data of packet)
