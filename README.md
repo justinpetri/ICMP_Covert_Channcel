@@ -1,16 +1,12 @@
 # ICMP_Covert_Channcel
-This project sends an ICMP echo message from device to another. Within the sent packet is covert message (base64 encoded text). The second device runs the listener to capture the packet then decode the message. The main priorities for this project were to further my knowledge with golang and understanding of ICMP packets.
+The goal of this project was to develop an understanding of Golang and Covert (Timing) Channels. A Covert Timing Channel does not modify the packets but instead sends message at specific time intervals, allowing those discrepencies to be used to form a message. In this case, the user can enter a string and the program will convert it into binary. ICMP packets will then be sent at specific intervals to match the encoded binary message. The receiver will be listening and will pick up the ICMP packets, identify the discrepencies in time, convert to binary and then decode the hidden message. The timing intervals can be increased in order to slow down the sending rate of ICMP packet. Additionally, this tool can be repurposed to take in messages from other files.
 
-
-Separate files into two separate machines (or just use 127.0.0.1 as IP address for targetIP)
-change targetIP
-change stringToEncode
-
+This project is for educational purposes only!
 
 USE:
-- change "ENTER_TARGET_IP_HERE" to an IP in the ICMP_sender.go file
-- run ICMP_receiver.go to begin packet capture
-- run ICMP_sender.go
+- Separate ICMP_receiver.go and ICMP_sender.go onto two different machines (or run locally by entering 127.0.0.1 for targetIP)
+- change targetIP value in ICMP_sender.go
+- change stringToEncode value in ICMP_sender.go
 
 SOURCES USED:
 - https://pkg.go.dev/golang.org/x/net/icmp#PacketConn
