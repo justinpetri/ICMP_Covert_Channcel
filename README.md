@@ -3,13 +3,16 @@ The goal of this project was to develop an understanding of Golang and Covert (T
 
 This project is for educational purposes only!
 
+
 USE:
 - Separate ICMP_receiver.go and ICMP_sender.go onto two different machines (or run locally by entering 127.0.0.1 for targetIP)
 - change targetIP value in ICMP_sender.go
 - change stringToEncode value in ICMP_sender.go
 
+
 SOURCES USED:
 - https://pkg.go.dev/golang.org/x/net/icmp#PacketConn
+
 
 NOTES:
 - first 8 bits of received data from ICMP packet is reserved: 1 bit for type, 1 for code, 2 for checksum, 2 for identifier, 2 for sequence number
