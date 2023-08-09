@@ -8,6 +8,7 @@ USE:
 - Separate ICMP_receiver.go and ICMP_sender.go onto two different machines (or run locally by entering 127.0.0.1 for targetIP)
 - change targetIP value in ICMP_sender.go
 - change stringToEncode value in ICMP_sender.go
+- Run ICMP_receiver.go before running ICMP_sender.go
 
 
 SOURCES USED:
